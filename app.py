@@ -17,7 +17,7 @@ from config import (
 )
 
 app = Flask(__name__)
-app.secret_key = "super_secret_key"
+app.secret_key = os.environ.get("SECRET_KEY")
 
 # ---------------- IMAGE UPLOAD CONFIG ----------------
 UPLOAD_FOLDER = "static/uploads/books"

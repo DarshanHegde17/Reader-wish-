@@ -1,12 +1,9 @@
 from pymongo import MongoClient
+import os
 
-MONGO_URI = "mongodb://localhost:27017/"
+client = MongoClient(os.environ.get("MONGO_URI"))
+db = client["reader_wish"]
 
-client = MongoClient(MONGO_URI)
-
-db = client["book_store_db"]
-
-# Collections
 users_collection = db["users"]
 books_collection = db["books"]
 orders_collection = db["orders"]
