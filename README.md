@@ -19,8 +19,6 @@ Reader Wish is a web-based platform for managing and tracking books, orders, and
 
 
 
-
-
 ## Features
 
 - Admin dashboard for managing books, orders, deliveries, and users
